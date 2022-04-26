@@ -1,0 +1,192 @@
+.wrapper {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.page-logo {
+    float: left;
+    font-size: 30px;
+    text-height: 32px;
+    letter-spacing: -1px;
+    font-weight: inherit;
+}
+.page-logo .lnk {
+    color: #515151;
+}
+.page-logo::first-letter {
+    color: #1abc9c;
+    font-weight: 900;
+}
+.lnk {
+    text-decoration: none;
+}
+
+.page-nav {
+    float: right;
+    font-size: 14px;
+    line-height: 11px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+.page-nav .lnk {
+    color: #000;
+}
+
+.list-item {
+    display: inline-block;
+    margin-left: 30px;
+}
+.list-item .lnk:hover {
+    color: #1abc9c;
+}
+
+.page-head {
+    height: auto;
+    overflow: hidden;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+}
+
+/* page-content */
+
+.section-name {
+    font-family: "Roboto",
+    sans-serif;
+    text-transform: uppercase;
+    color: #515151;
+    font-size: 48px;
+    line-height: 32px;
+    letter-spacing: -1px;
+    font-weight: 900;
+    text-align: center;
+    margin: 80px 0 80px 0;
+}
+
+/* .section-name::after {
+    width: 164px;
+    height: 7px;
+    content: "";
+    display: block;
+    background-color: #1abc9c;
+    margin: auto;
+    margin-top: 40px;
+} */
+/* OR  */
+.section-name::after {
+    display: block;
+    width: 164px;
+    content: "";
+    border-bottom: 7px solid #1abc9c;
+    margin: 40px auto;
+}
+
+.product-card {
+    width: 255px;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.market-grid .product-card:nth-child(4) {
+    margin-right: 0;
+}
+.market-grid .product-card:nth-child(8) {
+    margin-right: 0;
+}
+
+.product-img {
+    display: block;
+}
+
+.prod-block {
+    /* text-align: center; */
+    /* all txt will be centered */
+    font-family: "Roboto",
+    sans-serif;
+    color: #ffffff;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.product-name {
+    float: left;
+    width: 75%;
+    /* height: 40px; */
+    /* comment height cause use line-height,
+    but for better vert.position need to use height & line-height */
+    background-color: #3a3938;
+    margin: 0;
+    /* text-align: left; */
+    /* because by default it is on the left */
+    line-height: 40px;
+    padding-left: 5%;
+}
+.product-price {
+    float: left;
+    width: 20%;
+    /* height: 40px; */
+    /* comment height cause use line-height,
+    but for better vert.position need to use height & line-height */
+    background-color: #8e8f8f;
+    margin: 0;
+    text-align: center;
+    line-height: 40px;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.product-card:hover .product-name {
+    background-color: #26bea2;
+}
+.product-card:hover .product-price {
+    background-color: #80dbca;
+    color: #FF0066;
+}
+
+/* ------Latest news------ */
+
+.news-block {
+    width: 350px;
+    float: left;
+    font-family: "Open Sans", sans-serif;
+    line-height: 26px;
+}
+
+.news .news-block:not(:last-child) {
+    margin: 0 30px 45px 0;
+}
+
+.news-block > h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #515151;
+}
+
+.news-block > p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #515151;
+    margin-bottom: 25px;
+}
+
+.btn {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 300;
+    background-color: #1abc9c;
+    padding: 15px 40px;
+    border-radius: 5px;
+}
+
+.news-block > h3::after {
+    display: block;
+    content: "";
+    width: 135px;
+    border: 2px solid #1abc9c;
+    margin-top: 10px;
+}
