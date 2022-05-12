@@ -1,3 +1,11 @@
+/* :root {
+    color-scheme: dark light;
+} */
+
+/* * {
+    background-color: #efefef;
+} */
+
 .wrapper {
     width: 1110px;
     margin: 0 auto;
@@ -29,7 +37,7 @@
     margin: 20px 0;
 }
 .page-nav .lnk {
-    color: #000;
+    color: #515151;
 }
 
 .list-item {
@@ -187,6 +195,12 @@
     display: block;
     content: "";
     width: 135px;
-    border: 2px solid #1abc9c;
+    border-bottom: 4px solid #1abc9c;
     margin-top: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .list-item .lnk:hover, .product-name {
+        color: #f7d300;
+    }
 }
